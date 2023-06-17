@@ -208,7 +208,7 @@ h2
 
 .current::after
 {
-    content:"";
+    content: "";
     width: 53px;
     height: 4px;
     border-radius: 2px;
@@ -216,6 +216,7 @@ h2
     top: 27px;
     position:absolute;
 }
+
 
 .menu-contact
 {

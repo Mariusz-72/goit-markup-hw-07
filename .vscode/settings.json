@@ -1,5 +1,15 @@
 {
   "liveServer.settings.port": 5502,
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 2000
+  "files.autoSaveDelay": 2000,
+
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../css",
+    }
+  ],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.autoprefix": [">1%", "last 2 versions"]
 }
