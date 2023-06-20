@@ -1176,8 +1176,8 @@ footer
 
 .portfolio__card-shadow:hover,
 .portfolio__card-shadow:focus,
-.portfolio__card-shadow:hover .porfolio__card__hiddentext,
-.portfolio__card-shadow:focus .porfolio__card__hiddentext
+.portfolio__card-shadow:hover .portfolio__card-hiddentext,
+.portfolio__card-shadow:focus .portfolio__card-hiddentext
 
 {
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
