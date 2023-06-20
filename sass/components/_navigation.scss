@@ -1,4 +1,5 @@
 
+
 h2 
 {
     font-weight: 700px;
@@ -21,9 +22,6 @@ h2
     align-items: center;
     background: var(--white);
 
-
-
-
     &__nav
         {   
             width: 254px;
@@ -39,13 +37,13 @@ h2
             font-weight: 500;
             gap: 46px;
         
-        &____accent
+        &__accent
             {
                 position: relative;
             }
         
         
-        &____accent::after
+        &__accent::after
             {
                 content: "";
                 width: 53px;
@@ -61,17 +59,29 @@ h2
         {
             width: 150px;
             margin-left: 215px;
+
+
         }
 
-    &__nav__item
+    &__nav-item
         {
             color: var(--black);
             transition-property: visibility, opacity, transform, color;
             transition-duration: var(--transition-duration-standard);
             transition-timing-function: var(--transition-timing-function-standard);
+
+            &:hover
+            {
+                color: var(--blue);
+            }
+
+            &:focus
+            {
+                color: var(--blue);
+            }
         }    
         
-    &__contacts__icon1
+    &__contacts-icon1
         {
             width:16px;
             height:12px;
@@ -83,13 +93,13 @@ h2
         &:hover
                 {
                     color: var(--blue);
-                        fill: var(--blue); 
-                        cursor: pointer; 
+                    fill: var(--blue); 
+                    cursor: pointer; 
                 }
 
         }
         
-    &__contacts__icon2
+    &__contacts-icon2
         {
             width:10px;
             height:16px;
@@ -102,27 +112,19 @@ h2
         &:hover
                 {
                     color: var(--blue);
-                        fill: var(--blue); 
-                        cursor: pointer; 
+                    fill: var(--blue); 
+                    cursor: pointer; 
                 }
         }
 
-    &__contacts__item
+    &__contacts-item
         {
             height: 16px;
             color: var(--light-grey);
             transition-property: fill, color;
             transition-duration: var(--transition-duration-standard);
             transition-timing-function: var(--transition-timing-function-standard);
-        
-        &:hover  .header__contacts__icon1 .header__contacts__icon2
-            
-                
-                    { 
-                        color: var(--blue);
-                        fill: var(--blue); 
-                        cursor: pointer;
-                    }
+
         }
 
 
@@ -133,7 +135,7 @@ h2
             justify-content: space-between;
             align-items: center;
     
-        &__block
+        &-block
             {
                 font-weight: var(--font-wieght-normal);
                 height: 80px;
@@ -142,7 +144,7 @@ h2
                 gap: 30px;      
             }
 
-        &__link
+        &-link
             {
                 width:161px;
                 height: 16px;
@@ -154,41 +156,22 @@ h2
                 fill: var(--light-grey);
             }    
 
+        &-icon1:hover
+            {
+                color: var(--blue);
+                fill: var(--blue); 
+                cursor: pointer;
+            }    
+
+        &-icon2:hover
+            {
+                color: var(--blue);
+                fill: var(--blue); 
+                cursor: pointer;
+            }
+
         }
     }
-
-
-
-.logo__pre
-{
-    font-family: var(--font-family-special);
-    font-style: normal;
-    font-weight: var(--font-weight-bold);
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 3%;
-    color:var(--blue);
-}
-
-.logo__after
-{
-    font-family: var(--font-family-special);
-    font-style: normal;
-    font-weight: var(--font-weight-bold);
-    font-size: 26px;
-    line-height: 1px;
-    letter-spacing: 3%;
-    color: var(--black);
-}
-
-
-
-
-.navi:hover,.navi:focus
-{
-    color: var(--blue);
-}
-
 
 
 

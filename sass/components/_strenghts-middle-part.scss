@@ -1,0 +1,58 @@
+.strenghts
+{
+    padding-bottom: 0px;
+    margin: 0px;
+    justify-content: space-between;
+    gap: 30px;
+
+    &__block
+{
+    height: 251px; 
+}
+
+&__list 
+{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+&__item
+{
+    width: 270px;
+    height: 101px;
+}
+
+&__title
+{
+    color: var(--black);
+    font-size: var(--normal-text-size);
+    font-weight: 700;
+    line-height: 1.0;
+    letter-spacing: var(--letter-spacing-normal);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+&__text
+{
+    color: var(--light-grey);
+    line-height: 1.71;
+    width: 270px;
+}
+
+&__icon
+{
+    fill: var(--black);
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    background-color: var(--antenna-grey);
+    border-radius: var(--border-radius-normal);
+    margin-bottom: 30px;
+}
+
+
+}

@@ -1,0 +1,213 @@
+footer
+{
+    width: var(--width-full);
+    height: 252px;
+    display: flex;
+    background: var(--background-grey);
+}
+
+footer.container
+{
+    display:flex;
+}
+
+.footer
+{
+
+    &__block
+        {
+            display:block;
+        }
+
+    &__address
+        {
+            list-style-type: none;
+            font-style: normal;
+            margin-left: 215px;
+        }
+
+    &__address-item
+        {
+            color: var(--white);
+            font-style: normal;
+            font-size: var(--normal-text-size);
+            font-weight: var(--font-wieght-normal);
+            font-style: normal;
+            line-height: 1.71;
+            letter-spacing: var(--letter-spacing-normal);
+            text-decoration: none;
+        }
+
+    &__mail-tel
+        {
+            color: var(--white);
+            font-weight: var(--font-wieght-normal);
+            font-size: var(--normal-text-size);
+            line-height: 24px;
+            text-decoration: none;
+            opacity: 0.6;
+        }
+
+    &__logo
+        {
+            margin-top: 60px;
+            margin-left: 215px;
+        }
+
+    &__socialmedia-text
+        {
+            font-family: var(--font-family-standard);
+            font-size: var(--normal-text-size);
+            margin: 75px 0px 30px 10px;
+        }
+
+    &__social-box
+        {
+            margin-left: 50px;
+        }
+
+    &__newsletter
+        {
+            width: 570px;
+            height: 86px;
+            margin-top: 72px;
+            margin-left: 78px;
+        }
+
+    &__newsletter-text
+        {
+            font-size: var(--normal-text-size);
+            margin-bottom: 20px;
+        }
+
+    &__email
+        {
+            width: 358px;
+            height: 50px;
+            font-size: var(bigger-text-size);
+            font-weight: var(--font-wieght-normal);
+            line-height: 20px;
+            letter-spacing: var(--letter-spacing-normal);
+            padding-left: 40px;
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--border-radius-normal);
+            background-color: var(--background-grey);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            stroke: 1px solid rgba(255,255,255,0.3);
+        }
+
+    &__button-signup
+        {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+            background-color: var(--blue);
+            padding-top: 12px;
+            margin-left: 12px;
+            border: none;
+            border-radius: var(--border-radius-normal);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+
+    &__newsletter-field
+        {
+            display: flex;
+            width: 570px;
+        }
+
+    &__button-icon
+        {
+            width: 24px;
+            height: 24px;
+            fill: var(--white);
+            margin-left: 24px;
+        }
+
+    &__button-text
+        {
+            margin-left: 20px;
+            color: var(--white);
+            font-weight: 700;
+            font-size: var(bigger-text-size);
+            line-height: 30px;
+            letter-spacing: calc(var(--letterspacing-normal)*2);
+            text-align: center;
+        }
+
+}
+
+.logo-web
+{
+    font-family: var(--font-family-special);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 3%;
+    color:var(--blue);  
+}
+
+
+.logo__after2
+{
+    font-family: var(--font-family-special);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.0;
+    letter-spacing: 3%;
+    color: var(--white);
+}
+
+
+.socialmedia
+    {
+
+    &__list
+        {
+            display: flex;
+            list-style: none;
+            gap:15px;
+            margin: 10px  30px 30px 0px;
+            background: var(--background-grey);
+        }
+
+    &__list-item
+        {
+            height: 44px;
+            width: 44px;
+            fill:  var(--white);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%; 
+            cursor: pointer; 
+            transition-property: background-color;
+            transition-duration: var(--transition-duration-standard);
+            transition-timing-function: var(--transition-timing-function-standard);
+
+
+        }
+
+        &__list-item:hover
+            { 
+                background-color: var(--blue); 
+            }
+
+        &__list-item:focus
+            { 
+                background-color: var(--blue); 
+            }
+
+    &__icon
+        {
+            width:44px;
+            height:44px;
+            padding: 12px;
+            fill:  var(--white);
+        }
+
+    }
+
+

@@ -3,6 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
+
 body
 {
     font-family: "Roboto", sans-serif;
@@ -58,37 +59,4 @@ h1,h2,h3,h4,p
     max-width: 100%;
     margin: 0 auto; 
     color: var(--white);  
-}
-
-.logo-pre
-{
-    font-family: var(--font-family-special);
-    font-style: normal;
-    font-weight: var(--font-weight-bold);
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 3%;
-    color:var(--blue);
-}
-
-.logo-after
-{
-    font-family: var(--font-family-special);
-    font-style: normal;
-    font-weight: var(--font-weight-bold);
-    font-size: 26px;
-    line-height: 1px;
-    letter-spacing: 3%;
-    color: var(--black);
-}
-
-.logo__after2
-{
-    font-family: var(--font-family-special);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.0;
-    letter-spacing: 3%;
-    color: var(--white);
 }
