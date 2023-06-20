@@ -122,10 +122,13 @@ h2
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    gap: 30%;
     display: flex;
     padding-top: 25px;
     padding-bottom: 25px;
+    color: var(--black);
+    font-size: var(--normal-text-size);
+    font-weight: 500;
+    gap: 46px;
     
 }
 .header__logo
@@ -257,7 +260,7 @@ h2
     color: var(--background-grey);
     fill: var(--light-grey);
 }
-
+/*
 .header__contacts__item:hover .header__contacts__icon1,
 .header__contacts__item:hover .header__contacts__icon2,
 .header__contacts__icon1:hover,
@@ -268,7 +271,7 @@ h2
     cursor: pointer;
     
 }
-
+*/
                         /* main part  upper*/
                         /* main part  upper*/
                         /* main part  upper*/
