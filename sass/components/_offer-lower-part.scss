@@ -21,13 +21,13 @@
 
 &__text
 {
-    color: var(--white);
+    color: $white;
     position: absolute;
     width:370px;
     height: 70px;
     font-weight: 700;
     text-align: center;
-    font-size: var(--normal-text-size);
+    font-size: $normal-text-size;
     transform: translate(0%, -100%);
     background-color: rgba(47, 48, 58, 0.8);
     padding: 27px 0px;

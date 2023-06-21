@@ -3,7 +3,7 @@
 
     &__block
     {
-        background-color: var(--vanila-white);
+        background-color: $vanila-white;
         width: 100%;
         margin: 0px;
         align-items: center;
@@ -21,7 +21,7 @@
     &__item
     {
         text-align: center;
-        background-color: var(--white);
+        background-color: $white;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1),
                     0px 2px 2px rgba(0, 0, 0, 0.12),
                     0px 2px 1px rgba(0, 0, 0, 0.22);
@@ -39,22 +39,22 @@
     {
         font-style: normal;
         font-weight: 500;
-        font-size: var(bigger-text-size);
+        font-size: $bigger-text-size;
         line-height: 1.9;
         text-align: center;
-        letter-spacing: var(--letter-spacing-normal);
-        color: var(--black);
+        letter-spacing: $letter-spacing-normal;
+        color: $black;
     }
 
     &__title
     {
         font-style: normal;
-        font-weight: var(--font-wieght-normal);
-        font-size: var(bigger-text-size);
+        font-weight: $font-wieght-normal;
+        font-size: $bigger-text-size;
         line-height: 1.9;
         text-align: center;
-        letter-spacing: var(--letter-spacing-normal);
-        color: var(--light-grey);
+        letter-spacing: $letter-spacing-normal;
+        color: $light-grey;
         margin-bottom: 5px;
     }
 
@@ -69,15 +69,15 @@
 
     &__card-item
     {
-        background: var(--white);
+        background: $white;
         border-radius: 50%;
         width:44px;
         height:44px;
         padding: 12px;
         cursor: pointer;
         transition-property:transform, background-color, fill;
-        transition-duration: var(--transition-duration-standard);
-        transition-timing-function: var(--transition-timing-function-standard);
+        transition-duration: $transition-duration-standard;
+        transition-timing-function: $transition-timing-function-standard;
     }
 
 }
@@ -85,11 +85,11 @@
 
 .item__socialmedia
 {
-    fill:  var(--extra-light-grey);
-    background-color: var(--white);
+    fill:  $extra-light-grey;
+    background-color: $white;
     transition-property:transform,background-color, fill;
-    transition-duration: var(--transition-duration-standard);
-    transition-timing-function: var(--transition-timing-function-standard);
+    transition-duration: $transition-duration-standard;
+    transition-timing-function: $transition-timing-function-standard;
 }
 
 
@@ -98,6 +98,6 @@
 .team__card-item:hover,
 .team__card-item:focus
 {
-    fill: var(--white); 
-    background-color: var(--blue);
+    fill: $white; 
+    background-color: $blue;
 }

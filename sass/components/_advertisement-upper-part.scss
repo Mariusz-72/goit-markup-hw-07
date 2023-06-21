@@ -1,12 +1,12 @@
 .advert
 {
-    background-color: var(--dark-gray);
+    background-color: $dark-gray;
     height: 600px;
-    width: var(--width-full);
+    width: $width-full;
     margin: 0px;
     text-align: center;
     padding: 200px 0;
-    color: var(--white);
+    color: $white;
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), 
                         url("../images/imgbackground.jpg");
     background-position: center;
@@ -19,13 +19,13 @@
             font-size: 44px;
             line-height: 1.36;
             text-align: center;
-            letter-spacing: calc(var(--letterspacing-normal)*2);
+            letter-spacing: 0.06em;
             text-transform: uppercase;
             width: 696px;
             margin: 0 auto;
             margin-bottom: 30px;
-            text-shadow: 0px 4px 4px var(--black) ;
-            -webkit-text-stroke: 1px var(--black);
+            text-shadow: 0px 4px 4px $black;
+            -webkit-text-stroke: 1px $black;
             
         }
 
@@ -33,16 +33,16 @@
     &__button
         {
             cursor: pointer;
-            background-color: var(--blue);
-            color: var(--white);
-            font-weight: var(--font-weight-bold);
-            font-size: var(bigger-text-size);
+            background-color: $blue;
+            color: $white;
+            font-weight: $font-weight-bold;
+            font-size: $bigger-text-size;
             line-height: 1.88;
-            letter-spacing: calc(var(--letterspacing-normal)*2);
+            letter-spacing: 0.06em;
             text-align: center;
             min-width: 200px;
             border: none;
-            border-radius: var(--border-radius-normal);
+            border-radius: $border-radius-normal;
             padding: 10px 42px;
         }
 }

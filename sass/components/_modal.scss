@@ -8,22 +8,22 @@
 top: 50%;
 left: 50%;
     margin: auto;
-    background-color: #ffffff;
-    border-radius: var(--border-radius-normal);
+    background-color: $white;
+    border-radius: $border-radius-normal;
     border: 0px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     transition-property: visibility, opacity, transform;
-    transition-duration: calc(var(--transition-duration-standard)*4);
+    transition-duration: 1s;
     transform: translateX(-50%) translateY(-50%) scale(1);
     cursor: not-allowed;
 
 &__is-hidden
 {   
     pointer-events: none;
-    visibility:hidden;
-    opacity:0;
-    transform:scale(0);  
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);  
 }
 
 &__backdrop
@@ -39,17 +39,17 @@ left: 50%;
     cursor: not-allowed;
     transform: scale(1);
     transition-property: visibility, opacity, transform;
-    transition-duration: calc(var(--transition-duration-standard)*2);
-    transition-timing-function: var(--transition-timing-function-standard);
+    transition-duration: 0.5s;
+    transition-timing-function: $transition-timing-function-standard;
 }
 
 &__close
 {
     width: 30px;
     height: 30px;
-    border: 1px solid var(--extra-light-grey);
+    border: 1px solid $extra-light-grey;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: $white;
     position: relative;
     top: 8px;
     left: 93%;
@@ -59,7 +59,7 @@ left: 50%;
 
 &__title
 {
-    font-weight: var(--font-weight-bold);
+    font-weight: $font-weight-bold;
     font-size: 20px;
     line-height: 23.44px;
     text-align: center;
@@ -72,8 +72,8 @@ left: 50%;
 {
     height: 60px;
     font-size: 12px;
-    letter-spacing: calc(var(--letterspacing-normal)/3);
-    color: var(--light-grey);
+    letter-spacing: 0.01em;
+    color: $light-grey;
     line-height: 14.06px;
     margin-bottom: 10px;
     
@@ -94,15 +94,15 @@ left: 50%;
     left: 40px;
     margin-top:4px;
     transition-property:transform, background-color, fill;
-    transition-duration: var(--transition-duration-standard);
-    transition-timing-function: var(--transition-timing-function-standard);
+    transition-duration: $transition-duration-standard;
+    transition-timing-function: $transition-timing-function-standard;
 
 
     &:focus-within,
     &:active
         {
-        fill: var(--blue);
-        border-color: var(--blue);
+        fill: $blue;
+        border-color: $blue;
         outline: none;
         }
 
@@ -119,19 +119,19 @@ left: 50%;
 &__send
 {
     cursor: pointer;
-    background-color: var(--blue);
-    color: var(--white);
-    font-weight: var(--font-weight-bold);
-    font-size: var(bigger-text-size);
+    background-color: $blue;
+    color: $white;
+    font-weight: $font-weight-bold;
+    font-size: $bigger-text-size;
     line-height: 1.88;
-    letter-spacing: calc(var(--letterspacing-normal)*2);
+    letter-spacing: 0.06em;
     text-align: center;
     width: 200px;
     height: 50px;
     margin-top: 30px;
     margin-left: 164px;
     border: none;
-    border-radius: var(--border-radius-normal);
+    border-radius: $border-radius-normal;
     padding: 10px 42px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -150,16 +150,16 @@ left: 50%;
     line-height: 14.06px;
     text-indent: 44px;
     border: 1px solid  rgba(33,33,33,0.2);
-    border-radius: var(--border-radius-normal);
+    border-radius: $border-radius-normal;
     
     transition-property:fill, border-color;
-    transition-duration: var(--transition-duration-standard);
-    transition-timing-function: var(--transition-timing-function-standard);
+    transition-duration: $transition-duration-standard;
+    transition-timing-function: $transition-timing-function-standard;
 
     &:focus-within,
     &:active
         {
-            border: 1px solid var(--blue);
+            border: 1px solid $blue;
             outline: none;
         }
 
@@ -172,17 +172,17 @@ left: 50%;
     resize: none;
     padding: 12px 16px;
     border: 1px solid  rgba(33,33,33,0.2);
-    border-radius: var(--border-radius-normal);
+    border-radius: $border-radius-normal;
     transition-property:border;
-    transition-duration: var(--transition-duration-standard);
-    transition-timing-function: var(--transition-timing-function-standard);
+    transition-duration: $transition-duration-standard;
+    transition-timing-function: $transition-timing-function-standard;
 
 
     &:focus-visible,
     &:focus-within,
     &:active
         {
-            border: 1px solid var(--blue);
+            border: 1px solid $blue;
             outline: none;
         }
 
@@ -193,7 +193,7 @@ left: 50%;
 {
     line-height: 14px;
     font-size: 12px;
-    letter-spacing: calc(var(--letterspacing-normal)/3);
+    letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
 
@@ -201,8 +201,8 @@ left: 50%;
 {
     display: flex;
     justify-content: center;
-    font-size: var(--normal-text-size);
-    color: var(--light-grey);
+    font-size: $normal-text-size;
+    color: $light-grey;
     line-height: 24px;
     margin-top: 10px;
     padding-left: 10px;
@@ -215,14 +215,14 @@ left: 50%;
 &__link
 {
     text-decoration: underline;
-    color: var(--blue);
+    color: $blue;
 }
 
 &__statement-text
 {
     cursor: not-allowed;
     line-height: 24px;
-    letter-spacing: var(--letter-spacing-normal);
+    letter-spacing: $letter-spacing-normal;
 }
 /* schowanie standardowego checkboxa */
 &__checkbox input
@@ -234,15 +234,7 @@ left: 50%;
     width: 0;
 }
 
-
-
 }
-
-
-
-
-
-
 
 
 /* utworzenie mojego checkboxa */
@@ -252,10 +244,10 @@ left: 50%;
     left: -9px;
     height: 15px;
     width: 16px;
-    border-radius: calc(var(--border-radius-normal)/2);
-    background-color: var(--white);
+    border-radius: 2px;
+    background-color: $white;
     background-position: 50% 50%;
-    box-shadow: 0 0 0 0.1em var(--light-grey);
+    box-shadow: 0 0 0 0.1em $light-grey;
     cursor: pointer;
 }
 
@@ -263,15 +255,15 @@ left: 50%;
 
 .modal__checkbox:hover input ~ .checkbox__field 
 {
-    background-color: var(--lines-color);
-    box-shadow: 0 0 0 0.1em var(--blue);
+    background-color: $lines-color;
+    box-shadow: 0 0 0 0.1em $blue;
 }
 
 /* jak checkbox jest zaznaczony dodaje niebieskie tło */
 
 .modal__checkbox input:checked ~ .checkbox__field {
-    background-color: var(--blue);
-    box-shadow: 0 0 0 0.1em var(--blue);
+    background-color: $blue;
+    box-shadow: 0 0 0 0.1em $blue;
     
 }
 

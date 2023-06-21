@@ -1,9 +1,9 @@
 footer
 {
-    width: var(--width-full);
+    width: $width-full;
     height: 252px;
     display: flex;
-    background: var(--background-grey);
+    background: $background-grey;
 }
 
 footer.container
@@ -28,21 +28,21 @@ footer.container
 
     &__address-item
         {
-            color: var(--white);
+            color: $white;
             font-style: normal;
-            font-size: var(--normal-text-size);
-            font-weight: var(--font-wieght-normal);
+            font-size: $normal-text-size;
+            font-weight: $font-wieght-normal;
             font-style: normal;
             line-height: 1.71;
-            letter-spacing: var(--letter-spacing-normal);
+            letter-spacing: letter-spacing-normal;
             text-decoration: none;
         }
 
     &__mail-tel
         {
-            color: var(--white);
-            font-weight: var(--font-wieght-normal);
-            font-size: var(--normal-text-size);
+            color: $white;
+            font-weight: $font-wieght-normal;
+            font-size: $normal-text-size;
             line-height: 24px;
             text-decoration: none;
             opacity: 0.6;
@@ -56,8 +56,8 @@ footer.container
 
     &__socialmedia-text
         {
-            font-family: var(--font-family-standard);
-            font-size: var(--normal-text-size);
+            font-family: $font-family-standard;
+            font-size: $normal-text-size;
             margin: 75px 0px 30px 10px;
         }
 
@@ -76,7 +76,7 @@ footer.container
 
     &__newsletter-text
         {
-            font-size: var(--normal-text-size);
+            font-size: $normal-text-size;
             margin-bottom: 20px;
         }
 
@@ -84,15 +84,15 @@ footer.container
         {
             width: 358px;
             height: 50px;
-            font-size: var(bigger-text-size);
-            font-weight: var(--font-wieght-normal);
+            font-size: $bigger-text-size;
+            font-weight: $font-wieght-normal;
             line-height: 20px;
-            letter-spacing: var(--letter-spacing-normal);
+            letter-spacing: $letter-spacing-normal;
             padding-left: 40px;
-            color: var(--white);
+            color: $white;
             border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: var(--border-radius-normal);
-            background-color: var(--background-grey);
+            border-radius: $border-radius-normal;
+            background-color: $background-grey;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
             stroke: 1px solid rgba(255,255,255,0.3);
         }
@@ -104,11 +104,11 @@ footer.container
             width: 200px;
             height: 50px;
             cursor: pointer;
-            background-color: var(--blue);
+            background-color: $blue;
             padding-top: 12px;
             margin-left: 12px;
             border: none;
-            border-radius: var(--border-radius-normal);
+            border-radius: $border-radius-normal;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         }
 
@@ -122,18 +122,18 @@ footer.container
         {
             width: 24px;
             height: 24px;
-            fill: var(--white);
+            fill: $white;
             margin-left: 24px;
         }
 
     &__button-text
         {
             margin-left: 20px;
-            color: var(--white);
+            color: $white;
             font-weight: 700;
-            font-size: var(bigger-text-size);
+            font-size: $bigger-text-size;
             line-height: 30px;
-            letter-spacing: calc(var(--letterspacing-normal)*2);
+            letter-spacing: 0.06em;
             text-align: center;
         }
 
@@ -141,25 +141,25 @@ footer.container
 
 .logo-web
 {
-    font-family: var(--font-family-special);
+    font-family: $font-family-special;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 3%;
-    color:var(--blue);  
+    color:$blue;  
 }
 
 
 .logo__after2
 {
-    font-family: var(--font-family-special);
+    font-family: $font-family-special;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.0;
     letter-spacing: 3%;
-    color: var(--white);
+    color: $white;
 }
 
 
@@ -172,32 +172,32 @@ footer.container
             list-style: none;
             gap:15px;
             margin: 10px  30px 30px 0px;
-            background: var(--background-grey);
+            background: $background-grey;
         }
 
     &__list-item
         {
             height: 44px;
             width: 44px;
-            fill:  var(--white);
+            fill:  $white;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 50%; 
             cursor: pointer; 
             transition-property: background-color;
-            transition-duration: var(--transition-duration-standard);
-            transition-timing-function: var(--transition-timing-function-standard);
+            transition-duration: $transition-duration-standard;
+            transition-timing-function: $transition-timing-function-standard;
 
 
         }
 
         &__list-item:hover
             { 
-                background-color: var(--blue); 
+                background-color: $blue; 
             }
 
         &__list-item:focus
             { 
-                background-color: var(--blue); 
+                background-color: $blue; 
             }
 
     &__icon
@@ -205,7 +205,7 @@ footer.container
             width:44px;
             height:44px;
             padding: 12px;
-            fill:  var(--white);
+            fill:  $white;
         }
 
     }

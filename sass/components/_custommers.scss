@@ -21,23 +21,23 @@
     {
     width: 170px;
     height: 92px;
-    fill: var(--extra-light-grey);
-    border:1px solid var(--extra-light-grey);
-    border-radius: calc(var(--border-radius-normal) + 1);
+    fill: $extra-light-grey;
+    border:1px solid $extra-light-grey;
+    border-radius: 5px;
     display: flex;
     justify-content:center;
     align-items:center;
     cursor: pointer; 
     transition-property: transform, border-color, fill;
-    transition-duration: var(--transition-duration-standard);
-    transition-timing-function: var(--transition-timing-function-standard);
+    transition-duration: $transition-duration-standard;
+    transition-timing-function: $transition-timing-function-standard;
 
         &:hover,
         &:active,
         &:focus
             {
-            fill: var(--blue); 
-            border-color: var(--blue);
+            fill: $blue; 
+            border-color: $blue;
             }
     }   
 

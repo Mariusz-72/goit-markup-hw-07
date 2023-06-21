@@ -1,101 +1,88 @@
 
-
-h2 
-{
-    font-weight: 700px;
-    size: 26px;
-    line-height: 1.97;
-    margin: 20px;
-    text-decoration: none;
-}
-
-
-
 .header
 {
-    width: var(--width-full);
+    width: $width-full;
     height: 80px;
     border-bottom: solid 2px;
-    border-color: var(--lines-color);
+    border-color: $lines-color;
     display:flex;
     justify-content:space-between;
     align-items: center;
-    background: var(--white);
+    background: $white;
+    
+    
 
     &__nav
         {   
-            width: 254px;
-            height:80px;
-            justify-content: space-between;
+            width: 754px;
+            height: 80px;
+            display:flex;
+            .justify-content:space-between;
             align-items: center;
-            list-style-type: none;
-            display: flex;
+            float:left;
             padding-top: 25px;
             padding-bottom: 25px;
-            color: var(--black);
-            font-size: var(--normal-text-size);
+            color: $black;
+            font-size: $normal-text-size;
             font-weight: 500;
             gap: 46px;
         
         &__accent
             {
                 position: relative;
+            
+            &::after
+                {
+                    content: "";
+                    width: 53px;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: $blue;
+                    top: 27px;
+                    position:absolute;
+                }
             }
-        
-        
-        &__accent::after
-            {
-                content: "";
-                width: 53px;
-                height: 4px;
-                border-radius: calc(var(--border-radius-normal)/2);
-                background-color: var(--blue);
-                top: 27px;
-                position:absolute;
-            }
-        }
-
-    &__logo
-        {
-            width: 150px;
-            margin-left: 215px;
-
-
         }
 
     &__nav-item
         {
-            color: var(--black);
+            display:block;
+            float:left;
+            margin-left: 46px;
+            color: $black;
             transition-property: visibility, opacity, transform, color;
-            transition-duration: var(--transition-duration-standard);
-            transition-timing-function: var(--transition-timing-function-standard);
+            transition-duration: $transition-duration-standard;
+            transition-timing-function: $transition-timing-function-standard;
 
             &:hover
             {
-                color: var(--blue);
+                color: $blue;
             }
 
             &:focus
             {
-                color: var(--blue);
+                color: $blue;
             }
-        }    
+        }
+        
+    &__logo
+        {
+            width: 150px;
+            height: 80px;
+            margin-left: 215px;
+            margin-bottom: 30px;;
+        }
         
     &__contacts-icon1
         {
             width:16px;
             height:12px;
             margin-right: 10px;
-            fill: var(--light-grey);
+            fill: $light-grey;
             transition-property: fill, color;
-            transition-duration: var(--transition-duration-standard);
-            transition-timing-function: var(--transition-timing-function-standard);
-        &:hover
-                {
-                    color: var(--blue);
-                    fill: var(--blue); 
-                    cursor: pointer; 
-                }
+            transition-duration: $transition-duration-standard;
+            transition-timing-function: $transition-timing-function-standard;
+        
 
         }
         
@@ -105,26 +92,21 @@ h2
             height:16px;
             margin-right: 10px;
             margin-bottom: -3px;
-            fill: var(--light-grey);
+            fill: $light-grey;
             transition-property: fill, color;
-            transition-duration: var(--transition-duration-standard);
-            transition-timing-function: var(--transition-timing-function-standard);
-        &:hover
-                {
-                    color: var(--blue);
-                    fill: var(--blue); 
-                    cursor: pointer; 
-                }
+            transition-duration: $transition-duration-standard;
+            transition-timing-function: var($transition-timing-function-standard);
+        
         }
 
     &__contacts-item
         {
             height: 16px;
-            color: var(--light-grey);
+            color: $light-grey;
             transition-property: fill, color;
-            transition-duration: var(--transition-duration-standard);
-            transition-timing-function: var(--transition-timing-function-standard);
-
+            transition-duration: $transition-duration-standard;
+            transition-timing-function: $transition-timing-function-standard;
+        
         }
 
 
@@ -137,7 +119,7 @@ h2
     
         &-block
             {
-                font-weight: var(--font-wieght-normal);
+                font-weight: $font-wieght-normal;
                 height: 80px;
                 display:flex;
                 justify-content:center; 
@@ -152,24 +134,17 @@ h2
                 letter-spacing: 2%;
                 margin-top: 32px;
                 display:flex;
-                color: var(--background-grey);
-                fill: var(--light-grey);
-            }    
+                color: $background-grey;
+                fill: $light-grey;
 
-        &-icon1:hover
-            {
-                color: var(--blue);
-                fill: var(--blue); 
+                &:hover .header__contacts-icon1,
+                &:hover .header__contacts-icon2
+                {
+                color: $blue;
+                fill: $blue; 
                 cursor: pointer;
+                }
             }    
-
-        &-icon2:hover
-            {
-                color: var(--blue);
-                fill: var(--blue); 
-                cursor: pointer;
-            }
-
         }
     }
 

@@ -27,30 +27,30 @@
 
 &__title
 {
-    color: var(--black);
-    font-size: var(--normal-text-size);
+    color: $black;
+    font-size: $normal-text-size;
     font-weight: 700;
     line-height: 1.0;
-    letter-spacing: var(--letter-spacing-normal);
+    letter-spacing: $letter-spacing-normal;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 &__text
 {
-    color: var(--light-grey);
+    color: $light-grey;
     line-height: 1.71;
     width: 270px;
 }
 
 &__icon
 {
-    fill: var(--black);
+    fill: $black;
     width: 270px;
     height: 120px;
     padding: 25px 100px;
-    background-color: var(--antenna-grey);
-    border-radius: var(--border-radius-normal);
+    background-color: $antenna-grey;
+    border-radius: $border-radius-normal;
     margin-bottom: 30px;
 }
 
