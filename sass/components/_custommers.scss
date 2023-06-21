@@ -23,7 +23,7 @@
     height: 92px;
     fill: var(--extra-light-grey);
     border:1px solid var(--extra-light-grey);
-    border-radius: calc(var(--border-radius-normal)+1px);
+    border-radius: calc(var(--border-radius-normal) + 1);
     display: flex;
     justify-content:center;
     align-items:center;
