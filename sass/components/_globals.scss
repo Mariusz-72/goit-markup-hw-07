@@ -10,7 +10,7 @@ h2
 {
     font-weight: 700px;
     size: 26px;
-    line-height: 1.97;
+    line-height: 1.97em;
     margin: 20px;
     text-decoration: none;
 }
@@ -43,7 +43,6 @@ a:active
 }
 
 img {
-    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -58,7 +57,7 @@ h1,h2,h3,h4,p
     color: $black;
     font-weight: $font-weight-bold;
     font-size: 36px;
-    line-height: 1.0;
+    line-height: 1.0em;
     letter-spacing: $letter-spacing-normal;
     text-align: center;
     margin-bottom: 50px;
@@ -67,8 +66,8 @@ h1,h2,h3,h4,p
 .container
 {
     padding: 0 0 0 0px;
-    width: $width-full;
-    max-width: 100%;
+    
+    
     margin: 0 auto; 
     color: $white;  
 }
@@ -79,7 +78,7 @@ h1,h2,h3,h4,p
     font-style: normal;
     font-weight: $font-weight-bold;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 2em;
     letter-spacing: 3%;
     color:$blue;
 }
@@ -90,7 +89,7 @@ h1,h2,h3,h4,p
     font-style: normal;
     font-weight: $font-weight-bold;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 2em;
     letter-spacing: 3%;
     color: $black;
 }
@@ -101,7 +100,7 @@ h1,h2,h3,h4,p
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.0;
+    line-height: 2em;
     letter-spacing: 3%;
     color: $white;
 }

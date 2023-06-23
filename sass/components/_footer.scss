@@ -14,10 +14,6 @@ footer.container
 .footer
 {
 
-    &__block
-        {
-            display:block;
-        }
 
     &__address
         {
@@ -30,10 +26,8 @@ footer.container
         {
             color: $white;
             font-style: normal;
-            font-size: $normal-text-size;
             font-weight: $font-wieght-normal;
-            font-style: normal;
-            line-height: 1.71;
+            line-height: 1.71em;
             letter-spacing: letter-spacing-normal;
             text-decoration: none;
         }
@@ -42,8 +36,7 @@ footer.container
         {
             color: $white;
             font-weight: $font-wieght-normal;
-            font-size: $normal-text-size;
-            line-height: 24px;
+            line-height: 1.71em;
             text-decoration: none;
             opacity: 0.6;
         }
@@ -57,7 +50,6 @@ footer.container
     &__socialmedia-text
         {
             font-family: $font-family-standard;
-            font-size: $normal-text-size;
             margin: 75px 0px 30px 10px;
         }
 
@@ -76,7 +68,7 @@ footer.container
 
     &__newsletter-text
         {
-            font-size: $normal-text-size;
+
             margin-bottom: 20px;
         }
 
@@ -86,7 +78,7 @@ footer.container
             height: 50px;
             font-size: $bigger-text-size;
             font-weight: $font-wieght-normal;
-            line-height: 20px;
+            line-height: 1.5em;
             letter-spacing: $letter-spacing-normal;
             padding-left: 40px;
             color: $white;
@@ -132,34 +124,11 @@ footer.container
             color: $white;
             font-weight: 700;
             font-size: $bigger-text-size;
-            line-height: 30px;
+            line-height: 1.7em;
             letter-spacing: 0.06em;
             text-align: center;
         }
 
-}
-
-.logo-web
-{
-    font-family: $font-family-special;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 3%;
-    color:$blue;  
-}
-
-
-.logo__after2
-{
-    font-family: $font-family-special;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.0;
-    letter-spacing: 3%;
-    color: $white;
 }
 
 

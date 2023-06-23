@@ -2,23 +2,19 @@
 .header
 {
     width: $width-full;
+    margin: 0 auto;
     height: 80px;
-    border-bottom: solid 2px;
+    border-bottom: solid 1px;
     border-color: $lines-color;
     display:flex;
     justify-content:space-between;
     align-items: center;
     background: $white;
-    
-    
 
     &__nav
         {   
-            width: 754px;
-            height: 80px;
             display:flex;
             align-items: center;
-            float:left;
             padding-top: 25px;
             padding-bottom: 25px;
             color: $black;
@@ -45,7 +41,6 @@
 
     &__nav-item
         {
-            display:block;
             float:left;
             margin-left: 46px;
             color: $black;
@@ -53,23 +48,17 @@
             transition-duration: $transition-duration-standard;
             transition-timing-function: $transition-timing-function-standard;
 
-            &:hover
-            {
-                color: $blue;
-            }
-
+            &:hover,
             &:focus
             {
                 color: $blue;
             }
+
         }
         
     &__logo
         {
-            width: 150px;
-            height: 80px;
             margin-left: 215px;
-            margin-bottom: 30px;;
         }
         
     &__contacts-icon1
@@ -112,7 +101,7 @@
 
     &__contacts
         {
-            width: 490px;
+            margin-right: 187px;
             justify-content: space-between;
             align-items: center;
     
@@ -129,7 +118,7 @@
             {
                 width:161px;
                 height: 16px;
-                line-height: 16px;
+                line-height: 1.5em;
                 letter-spacing: 2%;
                 margin-top: 32px;
                 display:flex;

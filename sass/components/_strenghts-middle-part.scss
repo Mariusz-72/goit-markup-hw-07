@@ -1,9 +1,9 @@
 .strenghts
 {
-    padding-bottom: 0px;
-    margin: 0px;
+    margin: 0 auto;
     justify-content: space-between;
-    gap: 30px;
+    width: $width-full;
+    min-width: fit-content;
 
     &__block
 {
@@ -28,9 +28,8 @@
 &__title
 {
     color: $black;
-    font-size: $normal-text-size;
     font-weight: 700;
-    line-height: 1.0;
+    line-height: 1.0em;
     letter-spacing: $letter-spacing-normal;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -39,7 +38,7 @@
 &__text
 {
     color: $light-grey;
-    line-height: 1.71;
+    line-height: 1.71em;
     width: 270px;
 }
 

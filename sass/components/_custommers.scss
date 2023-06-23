@@ -6,6 +6,9 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+    margin: 0 auto;
+        width: $width-full;
+    min-width: fit-content;
 }
 
 &__list

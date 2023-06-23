@@ -3,6 +3,9 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+    margin: 0 auto;
+        width: $width-full;
+    min-width: fit-content;
 
 &__list
 {
@@ -22,12 +25,11 @@
 &__text
 {
     color: $white;
-    position: absolute;
-    width:370px;
+    position: relative;
+    width:100%;
     height: 70px;
     font-weight: 700;
     text-align: center;
-    font-size: $normal-text-size;
     transform: translate(0%, -100%);
     background-color: rgba(47, 48, 58, 0.8);
     padding: 27px 0px;

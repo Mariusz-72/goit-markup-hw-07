@@ -10,10 +10,9 @@ left: 50%;
     margin: auto;
     background-color: $white;
     border-radius: $border-radius-normal;
-    border: 0px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    transition-property: visibility, opacity, transform;
+    transition-property: transform;
     transition-duration: 1s;
     transform: translateX(-50%) translateY(-50%) scale(1);
     cursor: not-allowed;
@@ -61,7 +60,7 @@ left: 50%;
 {
     font-weight: $font-weight-bold;
     font-size: 20px;
-    line-height: 23.44px;
+    line-height: 2em;
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 5px;
@@ -74,14 +73,14 @@ left: 50%;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: $light-grey;
-    line-height: 14.06px;
+    line-height: 1em;
     margin-bottom: 10px;
     
 }
 
 &__inputs
 {
-    line-height: 20px;
+    line-height: 1.5em;
     margin-top: 12px;
     margin-left: 40px;
     
@@ -123,7 +122,7 @@ left: 50%;
     color: $white;
     font-weight: $font-weight-bold;
     font-size: $bigger-text-size;
-    line-height: 1.88;
+    line-height: 1.88em;
     letter-spacing: 0.06em;
     text-align: center;
     width: 200px;
@@ -147,7 +146,7 @@ left: 50%;
 {
     height: 40px;
     width: 448px;
-    line-height: 14.06px;
+    line-height: 1em;
     text-indent: 44px;
     border: 1px solid  rgba(33,33,33,0.2);
     border-radius: $border-radius-normal;
@@ -191,7 +190,7 @@ left: 50%;
 
 &__comment-field::placeholder
 {
-    line-height: 14px;
+    line-height: 1em;
     font-size: 12px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
@@ -201,9 +200,8 @@ left: 50%;
 {
     display: flex;
     justify-content: center;
-    font-size: $normal-text-size;
     color: $light-grey;
-    line-height: 24px;
+    line-height: 1.7em;
     margin-top: 10px;
     padding-left: 10px;
     -webkit-user-select: none;
@@ -221,7 +219,7 @@ left: 50%;
 &__statement-text
 {
     cursor: not-allowed;
-    line-height: 24px;
+    line-height: 1.7em;
     letter-spacing: $letter-spacing-normal;
 }
 /* schowanie standardowego checkboxa */
